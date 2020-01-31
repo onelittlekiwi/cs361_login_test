@@ -28,6 +28,8 @@ const generateAuthToken = () => {
     return crypto.randomBytes(30).toString('hex');
 }
 
+app.use("/public", express.static("public"));
+
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(cookieParser());
@@ -45,7 +47,7 @@ app.engine('hbs', exphbs({
 app.set('view engine', 'hbs');
 
 app.get('/', (req, res) => {
-    res.redirect('/login');
+    res.render('main');
 });
 
 app.get('/login', (req, res) => {
