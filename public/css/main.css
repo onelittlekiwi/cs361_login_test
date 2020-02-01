@@ -1,4 +1,4 @@
-body.home {
+.home {
     background-image: url(https://i1.wp.com/thepointsguy.com/wp-content/uploads/2019/02/chris-leipelt-766481-unsplash.jpg);
     background-size:  cover;
     background-position: center;
@@ -10,13 +10,13 @@ html {
     height: 100%;
     font-family: "Lato";
     color: white;
+    background-color: #749954;
 }
 
 h1 {
 	font-weight: 700;
 	font-size: 5em;
 }
-
 
 .content{
 	padding-top: 25%;
